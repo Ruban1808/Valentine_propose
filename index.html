@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fce4ec;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #d81b60;
+            font-size: 2.5rem;
+        }
+
+        .gif-container img {
+            width: 200px;
+            margin: 20px 0;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .yes-button {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .no-button {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="content">
+            <h1 id="question">Will you be my Valentine?</h1>
+            <div class="gif-container">
+                <img id="main-gif" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpueG5wZnd6NXN4Z3R6Z3Z4Z3R6Z3V4Z3R6Z3V4Z3R6Z3V4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/L4lvBpHFmxcY9vX8vO/giphy.gif" alt="Cute Cat">
+            </div>
+            <div class="buttons">
+                <button class="yes-button" onclick="handleYesClick()">Yes</button>
+                <button class="no-button" onclick="handleNoClick()">No</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
